@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1591742191 source:c:\users\user\desktop\new scanner\new_parser\main.cpp
+	<ctype.h>
+	<fstream>
+	<iostream>
+	<string>
+	<regex>
+	<vector>
+	<iomanip>
+

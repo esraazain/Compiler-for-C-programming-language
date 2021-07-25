@@ -1,0 +1,24 @@
+First(<program>)={int}
+First(<statements>)={int,float,char}
+First(<statement>)={int,float,char,return,if, A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,(,<constant>}
+First(<declaration statement>)={int,float,char,const}
+First(<type>)={int,float,char}
+First(<integer number>)={0,1,2,3,4,5,6,7,8,9,-}
+First(<digits>)={0,1,2,3,4,5,6,7,8,9}
+First(<digit>)={0,1,2,3,4,5,6,7,8,9}
+First(<non zero> <digit>)={1,2,3,4,5,6,7,8,9}
+First(<character>)={''}
+First(<letter>)={A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_}
+First(<float number>)={0,1,2,3,4,5,6,7,8,9,-}
+First(<identifier>)={A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_}
+First(<assignment expression>)={A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_}
+First(<arithmetic expression>)={A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>,(}
+First(<arithmetic operator>)={+,-,*,/}
+First(<conditional expression>)={A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>,(}
+First(<conditional operator>)={<,>,>=,<=,==,!=}
+First(<return statement>)={return}
+First(<if statement>)={if}
+First(<if part>)={if}
+First(<else part>)={else}
+First(<expression>)={A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>,(}
+First(<block>)={{}

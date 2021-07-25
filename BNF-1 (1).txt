@@ -1,0 +1,36 @@
+(00)<program> ::= int main() {<statements> <return statement>} | int main() {<return statement>;}
+(01)<statements> ::= <statement>; | <statement> ; <statements>
+(02)<statement> ::= <declaration statement> | <if statement> | <return statement> | <arithmetic expression>
+(03)<declaration statement> ::= <type> <identifier> | <type> <assignment expression> | const <type> <assignment expression>
+(04)<type> ::= int | char | float
+(07)<integer number> ::= <digits> | - <digits> | - <integer number>
+(08)<digits> ::= <digit> | <digit> <digits>
+(09)<digit> ::= 0 | <non zero> <digit>
+(10)<non zero> <digit> ::= 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+(11)<character> ::= '<letter>'
+(12)<letter> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|$|_
+(13)<float number> ::= <digits> . <digits> | - <digits> . <digits>
+(14)<identifier> ::= <letter> | <letter> <identifier> | <identifier> <digits> | <identifier> <digits> <identifier>
+(15)<assignment expression> ::= <identifier> = <arithmetic expression> | <identifier> = <conditional expression> | <identifier> = <constant>
+(16)<arithmetic expression> ::= <identifier> <arithmetic operator> <identifier>
+							    |<identifier> <arithmetic operator> <constant>
+							    |<identifier> <arithmetic operator> <arithmetic expression>
+							    |<constant> <arithmetic operator> <constant>
+							    |<constant> <arithmetic operator> <identifier>
+							    |<constant> <arithmetic operator> <arithmetic expression>
+							    |<arithmetic expression> <arithmetic operator> <identifier>
+							    |<arithmetic expression> <arithmetic operator> <constant>
+							    |(<arithmetic expression>)
+							    |<arithmetic expression> <arithmetic operator> <arithmetic expression>
+(17)<arithmetic operator> ::= + | - | * | /
+(18)<conditional expression> ::= <identifier> <conditional operator> <identifier>
+								|<constant> <conditional operator> <constant>
+								|<identifier> <conditional operator> <constant>
+								|<constant> <conditional operator> <constant>
+(19)<conditional operator> ::= < | > | >= | <= | == | !=
+(20)<return statement> ::= return <integer number> | return <float number> | return <character>
+(21)<if statement> ::= <if part> |<if part> <else part>
+(22)<if part> ::= if(<expression>) <statements> | if(<expression>) <block> | if(<expression>) <empty statement>
+(23)<else part> ::= else <statement> | else <block>
+(24)<expression> ::= <conditional expression> | <arithmetic expression> | <assignment expression>
+(25)<block> ::= {<statements>}

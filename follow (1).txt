@@ -1,0 +1,24 @@
+1  follow(<program>) = {$}
+2  follow(<statements>) = {return, ;,else, } }
+3  follow(<statement>) = {;}				
+4  follow(<declaration statement>) = {;}		
+5  follow(<type>) = {A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_ }
+6  follow(<integer number>) = {;,}}
+7  follow(<digits>) = {;,}, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), ., A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+8  follow(<digit>) = {;,}, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), ., A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+9  follow(<non zero> <digit>) = {;,}, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), ., A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+10 follow(<character>) = {;,}}
+11 follow(<letter>) = {', ;, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), , A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+12 follow(<float number>) = {;,}}
+13 follow(<identifier>) = {;, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+14 follow(<assignment expression>) = {;, else,{,<empty statement>}
+15 follow(<arithmetic expression>) = {;, else,{,<empty statement>,+,-,*,/,)}
+16 follow(<arithmetic operator>) = {A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>,(}
+17 follow(<conditional expression>) = {;, else,{,<empty statement>}
+18 follow(<conditional operator>) = {A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+19 follow(<return statement>) = {;,}}
+20 follow(<if statement>) = {;}
+21 follow(<if part>) = {;,else}
+22 follow(<else part>) = {;}
+23 follow(<expression>) = {;,else,{,<empty statement>}
+24 follow(<block>) = {;,else}

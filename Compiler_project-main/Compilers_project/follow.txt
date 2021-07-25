@@ -1,0 +1,24 @@
+follow(<program>) = {$}
+follow(<statements>) = {return, ;,else, } }
+follow(<statement>) = {;}				
+follow(<declaration statement>) = {;}		
+follow(<type>) = {A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_ }
+follow(<integer number>) = {;,}}
+follow(<digits>) = {;,}, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), ., A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+follow(<digit>) = {;,}, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), ., A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+follow(<non zero> <digit>) = {;,}, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), ., A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+follow(<character>) = {;,}}
+follow(<letter>) = {', ;, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), , A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+follow(<float number>) = {;,}}
+follow(<identifier>) = {;, = ,0,1,2,3,4,5,6,7,8,9, +,-,*,/, else,{,<empty statement>, ), A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+follow(<assignment expression>) = {;, else,{,<empty statement>}
+follow(<arithmetic expression>) = {;, else,{,<empty statement>,+,-,*,/,)}
+follow(<arithmetic operator>) = {A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>,(}
+follow(<conditional expression>) = {;, else,{,<empty statement>}
+follow(<conditional operator>) = {A,B,C,D,E,F,G,H,I,J,K,LM,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,$,_,<constant>}
+follow(<return statement>) = {;,}}
+follow(<if statement>) = {;}
+follow(<if part>) = {;,else}
+follow(<else part>) = {;}
+follow(<expression>) = {;,else,{,<empty statement>}
+follow(<block>) = {;,else}
